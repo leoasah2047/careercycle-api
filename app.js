@@ -23,7 +23,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-const allowedOrigins = ["localhost:3000", "https://careercycle.net"]
+const allowedOrigins = ["localhost:3000", "https://careercycle.net", "http://careercycle.net"]
 app.use(cors({
   origin: allowedOrigins
 }));
