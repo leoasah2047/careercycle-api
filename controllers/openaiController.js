@@ -3,7 +3,7 @@ const History = require("../models/history");
 
 
 const openai = new OpenAI({
-  apiKey: '', // This is the default and can be omitted
+  apiKey: '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', // This is the default and can be omitted
 });
 
 const OpenaiController = {
