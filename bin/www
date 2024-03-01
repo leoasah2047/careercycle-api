@@ -23,8 +23,7 @@ app.set("port", port);
 var mongoDbUrl = process.env.MONGODB_URL || "mongodb://cyclecareer362:Universe007@ac-wuxtsb8-shard-00-00.ymhc1ln.mongodb.net:27017,ac-wuxtsb8-shard-00-01.ymhc1ln.mongodb.net:27017,ac-wuxtsb8-shard-00-02.ymhc1ln.mongodb.net:27017/?ssl=true&replicaSet=atlas-p1ujre-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(mongoDbUrl, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex : true
+  useUnifiedTopology: true
 });
 
 var db = mongoose.connection;
