@@ -7,6 +7,7 @@ require("dotenv").config()
 
 const historyRouter = require("./routes/historys")
 const feedbackRouter = require("./routes/feedbacks")
+const postRouter = require("./routes/posts")
 const coverLetterRouter = require("./routes/coverLetters")
 const resignationLetterRouter = require("./routes/resignationLetters")
 const applicationsRouter = require("./routes/applications");
@@ -52,6 +53,7 @@ const tokenChecker = (req, res, next) => {
 // route setup
 app.use("/history", tokenChecker, historyRouter)
 app.use("/feedback", tokenChecker, feedbackRouter)
+app.use("/post", tokenChecker, postRouter)
 app.use("/coverLetterGen", tokenChecker, coverLetterRouter);
 app.use("/resignationLetterGen", tokenChecker, resignationLetterRouter);
 app.use("/applications", tokenChecker, applicationsRouter);
