@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start:test": "MONGODB_URL='mongodb://cyclecareer362:Universe007@ac-wuxtsb8-shard-00-00.ymhc1ln.mongodb.net:27017,ac-wuxtsb8-shard-00-01.ymhc1ln.mongodb.net:27017,ac-wuxtsb8-shard-00-02.ymhc1ln.mongodb.net:27017/?ssl=true&replicaSet=atlas-p1ujre-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0' npm start",
+    "start:test": "MONGODB_URL='mongodb+srv://cyclecareer362:Universe007@cluster0.ymhc1ln.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' npm start",
     "test": "jest --detectOpenHandles",
     "test-coverage": "npx jest --detectOpenHandles --coverage --watchAll=false"
   },
